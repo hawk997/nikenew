@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-start{
+    align-items: flex-start;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.text-align-center{
+    text-align: center;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: 'Roboto';
+    background: #EBEBEB;
+}
+.title{
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #2E2E3C;
+    text-transform: uppercase;
+    padding: 2px;
+    padding-left: 9px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: max-content;
+    margin: 20px auto;
+}
+.title a{
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 18px; 
+    color: white;
+    background: #9A98EA;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 7px 10px;
+}
+/* header start*/
+.header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header__nav {
+    background: #322E41;
+    padding: 15px 0;
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list {
+    display: flex;
+}
+.header-nav__link{
+    font-size: 16px;
+    line-height: 18.75px;
+    color: white;
+    margin: 0 15px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 23px;
+    transition: 200ms;
+}
+.header-nav__link:hover{
+    color: #FFE600;
+    border-color: white;
+}
+.header__content {
+    background: url(../img/header\ banner.png) no-repeat center/cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header__content-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 15px;
+}
+.header__content-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+.header__content-text span{
+    font-weight: 700;
+}
+/* header end */
+/* ************************* */
+/* main start */
+.main{
+
+}
+.main__news-item {
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid #D7D6DC;
+    border-radius: 3px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+.main__news-item img{
+    width: 100%;
+    object-fit: cover;
+}
+.main__news-info a{
+    display: block;
+    width: 100%;
+    background: #DFC900;
+    color: #050505;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 11px 0;
+    text-align: center;
+    transition: background 300ms, color 400ms;
+}
+.main__news-info a:hover{
+    background: #050505;
+    color: #DFC900;
+}
+.main__news-info h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #2C2A2A;
+}
+.main__news-info p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #9B9B9B;
+    margin-bottom: 10px;
+}
+
+.main__product{
+    background: #ffffff;
+}
+.main__product-left{
+    width: 50%;
+    padding: 80px 100px;
+}
+.product__left-info{
+    margin-bottom: 27px;
+}
+.product__left-info h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+    color: #000000;
+}
+.product__left-info span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.main__product-left p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #6A6A6A;
+}
+.main__product-button{
+    max-width: 255px;
+    width: 100%;
+    background: #DFC900;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #050505;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 20px;
+    transition: background  500ms, color 600ms;
+}
+.main__product-button:hover{
+    background: #050505;
+    color: #DFC900;
+}
+.main__product-button:first-of-type{
+    margin-right: 30px;
+}
+.main__product-right{
+    width: 50%;
+
+}
+.product__right-top img{
+    width: 100%;
+    display: block;
+}
+.product__right-top{
+    margin-bottom: 15px;
+}
+.product__right-bottom img {
+
+}
+.product__img-left,
+.product__img-right{
+    flex-grow: 1;
+}
+.product__img-left{
+    margin-right: 15px;
+}
+.product__img-left img,
+.product__img-right img{
+    width: 100%;
+    display: block;
+}
+.main__snickers {
+    padding: 30px 15px 40px 15px;
+}
+.main__snickers-item{
+    border: 1px solid #A0A0A0;
+    max-width: calc(100% / 4 - 30px);
+    background: #FFFFFF;
+}
+.main__snickers-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.main__snickers-info{
+    padding: 15px;
+
+}
+.main__snickers-info h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 18px;
+    color: #000000;
+}
+.main__snickers-info p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6A6A6A;
+    margin: 10px 0;
+}
+
+.main__snickers-price a{
+    background: #DFC900;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #050505;
+    flex-grow: 1;
+    text-align: center;
+    padding: 11px 0;
+    transition: background 500ms, color 500ms;
+}
+.main__snickers-price a:hover{
+    background: #050505;
+    color: #DFC900;
+}
+.main__snickers-price span{
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 33px;
+}
+
+
+/* main  end*/
+/* ************************* */
+
+
+
