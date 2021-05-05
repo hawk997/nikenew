@@ -75,6 +75,9 @@
     .main__news-info a {
         font-size: 18px;
     }
+    .main__product-left {
+        padding: 40px 30px;
+    }
     
 }
 @media(max-width:576px) {
@@ -100,5 +103,8 @@
     .item-2{
         margin: 0;
         margin-bottom: 30px;
+    }
+    .main__product-left {
+        padding: 30px 15px;
     }
 }
